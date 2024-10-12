@@ -1,0 +1,10 @@
+body {
+    background-image: url('./madagascar.jpg');
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
