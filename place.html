@@ -1,49 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madagascar</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js" defer></script>
+    <title>Moscow, Russia</title>
+    <meta name="description" content="The place where my Mom was born.">
+    <meta name="author" content="John Shirley">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script defer src="scripts/place.js"></script>
 </head>
+
 <body>
+
     <header>
-        <nav>
-            <div class="logo">Madagascar</div>
-        </nav>
+        <h1>Moscow</h1>
     </header>
-
-    <div id="background"></div>
-        <img src="images/madagascar.jpg" >
-        
-     <section class="data">
-        <h2>Data</h2>
-        <ul>
-            <li>Area: 587,041 sq km</li>
-            <li>Population: 27,619,013</li>
-            <li>Capital: Antananarivo</li>
-            <li>Language: Malagasy, French</li>
-            <li>Currency: Malagasy Ariary</li>
-            <li>Time Zone: UTC+3</li>
-            <li>Calling Code: +261</li>
-            <li>Internet TLD: .mg</li>
-        </ul>
-    </section>
-
-    <section class="weather">
-        <h2>Weather ⛅</h2>
-        <div id="weather-info">
-            <p>Temperature: <span id="temperature">10°C</span></p>
-            <p>Conditions: Partly Cloudy</p>
-            <p>Wind: <span id="wind">5 km/h</span></p>
-            <p>Wind Chill: <span id="windChill">N/A</span></p>
+    <main>
+        <div class="stripe"></div>
+        <div class="hero">
+            <picture>
+                <source srcset="images/moscow.jpg" media="(min-width:800px)">
+                <img src="images/moscow-night.jpg" alt="Moscow" width="500" height="250">
+            </picture>
         </div>
-    </section>
-
+        <div class="stripe-2"></div>
+        <h2 class="title-data">Data</h2>
+        <div class="data">
+            <div class="labels">
+                <p><strong>Area: </strong></p>
+                <p><strong>Population: </strong></p>
+                <p><strong>Language: </strong></p>
+                <p><strong>Currency: </strong></p>
+                <p><strong>Time Zone: </strong></p>
+                <p><strong>Calling Code: </strong></p>
+                <p><strong>Internet TLD: </strong></p>
+            </div>
+            <div class="values">
+                <p>970 sq mi</p>
+                <p>13,000,000</p>
+                <p>Russian</p>
+                <p>Rouble</p>
+                <p>GMT+3</p>
+                <p>+7</p>
+                <p>.moscow</p>
+            </div>
+        </div>
+        <h2 class="title-weather">Weather</h2>
+        <div class="img-weather">
+            <img class="img-weather" src="images/weather.png" alt="" width="100">
+        </div>
+        <div class="weather">
+            <div class="labels">
+                <p><strong>Temperature: </strong></p>
+                <p><strong>Conditions: </strong></p>
+                <p><strong>Wind: </strong></p>
+                <p><strong>Wind Chill: </strong></p>
+            
+            </div>
+            <div class="values">
+                <p><span id="temperature">0</span> °<span id="temperatureUnit">C</span></p>
+                <p>Warm semi-arid</p>
+                <p><span id="wind">11.4</span> mph</p>
+                <p id="windChillFactor"></p>
+                
+            </div>
+        </div>
+    </main>
     <footer>
-        <p>&copy; <span id="currentYear"></span> Rubia Magdalena Francesco | Last Modification: <span id="lastModified"></span></p>
+        <p class="first-p-footer">&copy;<span id="currentyear"></span> 💻 John Shirley 💻 Idaho</p>
+        <p id="lastModified" class="second-p-footer"></p>
     </footer>
-
 </body>
+
 </html>
