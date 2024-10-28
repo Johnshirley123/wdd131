@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
-    --primary-color: #000080;
+    --primary-color: #0077B6;
     --secondary-color: #CAF0F8;
     --accent1-color: rgb(57, 108, 160);
     --accent2-color: #886e52;
@@ -13,6 +13,8 @@
     --nav-hover-background-color: #ffffff;
 
 }
+
+
 
 body {
     font-family: "Roboto", serif;
@@ -63,7 +65,7 @@ h1 {
     flex-direction: column;
     list-style: none;
     text-align: right;
-    color: #e8f075;
+    color: #fff;
 }
 
 .navigation a {
@@ -71,7 +73,7 @@ h1 {
     padding: 1rem;
     text-align: center;
     text-decoration: none;
-    color: #FFD700;
+    color: #fff;
 }
 
 .navigation a:hover {
@@ -109,6 +111,6 @@ footer{
     text-align: center;
     padding: 5px;
     margin: 0;
-    color: #FFD700;
+    color: #CAF0F8;
     font-family: Rubik, sans-serif;;
 }
