@@ -79,7 +79,7 @@ h1 {
     font-weight: 700;
 }
 
-/* when the button is clicked - the open class is toggled (added/removed) */
+
 .open a {
     display: block;
 }
